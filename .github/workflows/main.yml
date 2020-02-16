@@ -13,10 +13,8 @@ jobs:
         run: |
           yarn install
           yarn build
-      - name: Upload artifact
-        uses: actions/upload-artifact@v1.0.0
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@3.2.1
         with:
-          # Artifact name
-          name: build
-          # Directory containing files to upload
-          path: build
+          BRANCH: gh-pages
+          FOLDER: build
