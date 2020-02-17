@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/react-job-title-generator/static/css/main.47a2e521.chunk.css",
-    "main.js": "/react-job-title-generator/static/js/main.20145046.chunk.js",
-    "main.js.map": "/react-job-title-generator/static/js/main.20145046.chunk.js.map",
+    "main.js": "/react-job-title-generator/static/js/main.bbd75ac8.chunk.js",
+    "main.js.map": "/react-job-title-generator/static/js/main.bbd75ac8.chunk.js.map",
     "runtime-main.js": "/react-job-title-generator/static/js/runtime-main.954b2e1c.js",
     "runtime-main.js.map": "/react-job-title-generator/static/js/runtime-main.954b2e1c.js.map",
-    "static/js/2.a10e99ac.chunk.js": "/react-job-title-generator/static/js/2.a10e99ac.chunk.js",
-    "static/js/2.a10e99ac.chunk.js.map": "/react-job-title-generator/static/js/2.a10e99ac.chunk.js.map",
+    "static/js/2.234320f6.chunk.js": "/react-job-title-generator/static/js/2.234320f6.chunk.js",
+    "static/js/2.234320f6.chunk.js.map": "/react-job-title-generator/static/js/2.234320f6.chunk.js.map",
     "index.html": "/react-job-title-generator/index.html",
-    "precache-manifest.504ce20d2c2ec74897d717103b141bf3.js": "/react-job-title-generator/precache-manifest.504ce20d2c2ec74897d717103b141bf3.js",
+    "precache-manifest.7099ac8106fd5264f279801ef83ffa6d.js": "/react-job-title-generator/precache-manifest.7099ac8106fd5264f279801ef83ffa6d.js",
     "service-worker.js": "/react-job-title-generator/service-worker.js",
     "static/css/main.47a2e521.chunk.css.map": "/react-job-title-generator/static/css/main.47a2e521.chunk.css.map",
-    "static/js/2.a10e99ac.chunk.js.LICENSE.txt": "/react-job-title-generator/static/js/2.a10e99ac.chunk.js.LICENSE.txt"
+    "static/js/2.234320f6.chunk.js.LICENSE.txt": "/react-job-title-generator/static/js/2.234320f6.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.954b2e1c.js",
-    "static/js/2.a10e99ac.chunk.js",
+    "static/js/2.234320f6.chunk.js",
     "static/css/main.47a2e521.chunk.css",
-    "static/js/main.20145046.chunk.js"
+    "static/js/main.bbd75ac8.chunk.js"
   ]
 }
