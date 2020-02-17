@@ -1,6 +1,6 @@
 {
   "name": "react-job-title-generator",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "homepage": "https://deadlybyte.github.io/react-job-title-generator",
   "dependencies": {
