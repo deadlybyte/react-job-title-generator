@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "deadlybyte.github.io/react-job-title-generator/static/css/main.47a2e521.chunk.css",
-    "main.js": "deadlybyte.github.io/react-job-title-generator/static/js/main.4b1d01c1.chunk.js",
-    "main.js.map": "deadlybyte.github.io/react-job-title-generator/static/js/main.4b1d01c1.chunk.js.map",
-    "runtime-main.js": "deadlybyte.github.io/react-job-title-generator/static/js/runtime-main.412d48bc.js",
-    "runtime-main.js.map": "deadlybyte.github.io/react-job-title-generator/static/js/runtime-main.412d48bc.js.map",
-    "static/js/2.4bbc27a1.chunk.js": "deadlybyte.github.io/react-job-title-generator/static/js/2.4bbc27a1.chunk.js",
-    "static/js/2.4bbc27a1.chunk.js.map": "deadlybyte.github.io/react-job-title-generator/static/js/2.4bbc27a1.chunk.js.map",
-    "index.html": "deadlybyte.github.io/react-job-title-generator/index.html",
-    "precache-manifest.9eacc89300f7e4b859c2f43012ff12ed.js": "deadlybyte.github.io/react-job-title-generator/precache-manifest.9eacc89300f7e4b859c2f43012ff12ed.js",
-    "service-worker.js": "deadlybyte.github.io/react-job-title-generator/service-worker.js",
-    "static/css/main.47a2e521.chunk.css.map": "deadlybyte.github.io/react-job-title-generator/static/css/main.47a2e521.chunk.css.map",
-    "static/js/2.4bbc27a1.chunk.js.LICENSE.txt": "deadlybyte.github.io/react-job-title-generator/static/js/2.4bbc27a1.chunk.js.LICENSE.txt"
+    "main.css": "/static/css/main.47a2e521.chunk.css",
+    "main.js": "/static/js/main.b4a060cd.chunk.js",
+    "main.js.map": "/static/js/main.b4a060cd.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.f2efc47f.js",
+    "runtime-main.js.map": "/static/js/runtime-main.f2efc47f.js.map",
+    "static/js/2.28ad4479.chunk.js": "/static/js/2.28ad4479.chunk.js",
+    "static/js/2.28ad4479.chunk.js.map": "/static/js/2.28ad4479.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.3b61053d840b1df1ec1e1220a90bee54.js": "/precache-manifest.3b61053d840b1df1ec1e1220a90bee54.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.47a2e521.chunk.css.map": "/static/css/main.47a2e521.chunk.css.map",
+    "static/js/2.28ad4479.chunk.js.LICENSE.txt": "/static/js/2.28ad4479.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.412d48bc.js",
-    "static/js/2.4bbc27a1.chunk.js",
+    "static/js/runtime-main.f2efc47f.js",
+    "static/js/2.28ad4479.chunk.js",
     "static/css/main.47a2e521.chunk.css",
-    "static/js/main.4b1d01c1.chunk.js"
+    "static/js/main.b4a060cd.chunk.js"
   ]
 }
