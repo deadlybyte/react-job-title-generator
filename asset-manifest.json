@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/react-job-title-generator/static/css/main.47a2e521.chunk.css",
-    "main.js": "/react-job-title-generator/static/js/main.09b72b0f.chunk.js",
-    "main.js.map": "/react-job-title-generator/static/js/main.09b72b0f.chunk.js.map",
+    "main.js": "/react-job-title-generator/static/js/main.20145046.chunk.js",
+    "main.js.map": "/react-job-title-generator/static/js/main.20145046.chunk.js.map",
     "runtime-main.js": "/react-job-title-generator/static/js/runtime-main.954b2e1c.js",
     "runtime-main.js.map": "/react-job-title-generator/static/js/runtime-main.954b2e1c.js.map",
-    "static/js/2.a536b1c0.chunk.js": "/react-job-title-generator/static/js/2.a536b1c0.chunk.js",
-    "static/js/2.a536b1c0.chunk.js.map": "/react-job-title-generator/static/js/2.a536b1c0.chunk.js.map",
+    "static/js/2.a10e99ac.chunk.js": "/react-job-title-generator/static/js/2.a10e99ac.chunk.js",
+    "static/js/2.a10e99ac.chunk.js.map": "/react-job-title-generator/static/js/2.a10e99ac.chunk.js.map",
     "index.html": "/react-job-title-generator/index.html",
-    "precache-manifest.1ca314c1cc37f8453ce14a0db20d9b73.js": "/react-job-title-generator/precache-manifest.1ca314c1cc37f8453ce14a0db20d9b73.js",
+    "precache-manifest.504ce20d2c2ec74897d717103b141bf3.js": "/react-job-title-generator/precache-manifest.504ce20d2c2ec74897d717103b141bf3.js",
     "service-worker.js": "/react-job-title-generator/service-worker.js",
     "static/css/main.47a2e521.chunk.css.map": "/react-job-title-generator/static/css/main.47a2e521.chunk.css.map",
-    "static/js/2.a536b1c0.chunk.js.LICENSE.txt": "/react-job-title-generator/static/js/2.a536b1c0.chunk.js.LICENSE.txt"
+    "static/js/2.a10e99ac.chunk.js.LICENSE.txt": "/react-job-title-generator/static/js/2.a10e99ac.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.954b2e1c.js",
-    "static/js/2.a536b1c0.chunk.js",
+    "static/js/2.a10e99ac.chunk.js",
     "static/css/main.47a2e521.chunk.css",
-    "static/js/main.09b72b0f.chunk.js"
+    "static/js/main.20145046.chunk.js"
   ]
 }
