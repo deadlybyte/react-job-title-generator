@@ -225,6 +225,9 @@ const Header = styled.header`
 
 const Footer = styled.footer`
   min-height: 15vh;
+  p {
+    margin: 0;
+  }
 `;
 
 const Button = styled.button`
