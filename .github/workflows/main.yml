@@ -11,6 +11,7 @@ jobs:
       - uses: actions/checkout@v2
       - name: yarn install and build
         env:
+          REACT_APP_MONTH_BORN_ROLES: ${{secrets.MONTH_BORN_ROLES}}
           REACT_APP_WEBSITE_NAME: ${{secrets.WEBSITE_NAME}}
           REACT_APP_WEBSITE_FOOTER: ${{secrets.WEBSITE_FOOTER}}
         run: |
