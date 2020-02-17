@@ -190,6 +190,19 @@ const App = () => {
           {process.env.REACT_APP_WEBSITE_FOOTER && (
             <p>{process.env.REACT_APP_WEBSITE_FOOTER}</p>
           )}
+          <p>
+            <span role="img" aria-label="Megaphone">
+              📣
+            </span>{' '}
+            Inspired by an idea from{' '}
+            <a
+              href="https://caroo.co.uk/"
+              title="Caroo"
+              rel="noopener noreferrer"
+            >
+              Caroo
+            </a>
+          </p>
         </Footer>
       </Background>
     </>
@@ -227,6 +240,9 @@ const Footer = styled.footer`
   min-height: 15vh;
   p {
     margin: 0;
+  }
+  a {
+    color: #292a37;
   }
 `;
 
