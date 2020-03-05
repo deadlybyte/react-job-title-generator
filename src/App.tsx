@@ -1,4 +1,4 @@
-import React, { ChangeEvent, useState } from 'react';
+import React, { ChangeEvent, useCallback, useState } from 'react';
 import Confetti from 'react-confetti';
 import { Helmet } from 'react-helmet';
 import useWindowSize from 'react-use/lib/useWindowSize';
@@ -13,26 +13,27 @@ const App = () => {
   const [monthBorn, setMonthBorn] = useState<number>();
   const { width, height } = useWindowSize();
 
-  const moveStep = (step: Steps) => setCurrentStep(step);
+  const moveStep = useCallback((step: Steps) => setCurrentStep(step), []);
 
-  const initializeStep = () => {
+  const moveToStart = useCallback(() => moveStep(Steps.FirstName), [moveStep]);
+  const moveToFinish = useCallback(() => moveStep(Steps.Finished), [moveStep]);
+
+  const initializeStep = useCallback(() => {
     setCurrentStep(Steps.Welcome);
     setFirstName('');
     setIndustry('');
     setMonthBorn(undefined);
     moveToStart();
-  };
+  }, [moveToStart]);
 
-  const moveToStart = () => moveStep(Steps.FirstName);
-  const moveToFinish = () => moveStep(Steps.Finished);
-
-  const onKeyDown = (step: Steps) => ({
-    key,
-  }: React.KeyboardEvent<HTMLInputElement>) => {
-    if (key === 'Enter') {
-      moveStep(step);
-    }
-  };
+  const onKeyDown = useCallback(
+    (step: Steps) => ({ key }: React.KeyboardEvent<HTMLInputElement>) => {
+      if (key === 'Enter') {
+        moveStep(step);
+      }
+    },
+    [moveStep]
+  );
 
   let jobTitle: string | null = '';
   if (currentStep === Steps.Finished) {
@@ -51,6 +52,7 @@ const App = () => {
               <AppTitle>{process.env.REACT_APP_WEBSITE_NAME}</AppTitle>
               <Button
                 autoFocus
+                type="button"
                 onClick={event => {
                   event.preventDefault();
                   initializeStep();
@@ -80,7 +82,9 @@ const App = () => {
                   }}
                 />
                 <Button
-                  onClick={() => {
+                  type="button"
+                  onClick={event => {
+                    event.preventDefault();
                     if (firstName) {
                       moveStep(Steps.Industry);
                     }
@@ -111,7 +115,9 @@ const App = () => {
                   }}
                 />
                 <Button
-                  onClick={() => {
+                  type="button"
+                  onClick={event => {
+                    event.preventDefault();
                     if (industry) {
                       moveStep(Steps.MonthBorn);
                     }
@@ -131,7 +137,10 @@ const App = () => {
                   autoFocus
                   value={monthBorn}
                   required
-                  onKeyDown={() => moveToFinish()}
+                  onKeyDown={event => {
+                    event.preventDefault();
+                    moveToFinish();
+                  }}
                   onChange={({
                     target: { value },
                   }: ChangeEvent<HTMLSelectElement>) => {
@@ -154,7 +163,15 @@ const App = () => {
                   <option value="10">November</option>
                   <option value="11">December</option>
                 </DropDownList>
-                <Button onClick={() => moveToFinish()}>Finish</Button>
+                <Button
+                  type="button"
+                  onClick={event => {
+                    event.preventDefault();
+                    moveToFinish();
+                  }}
+                >
+                  Finish
+                </Button>
               </InputGroup>
             </>
           )}
@@ -180,7 +197,14 @@ const App = () => {
                   </span>
                 </p>
               </div>
-              <Button autoFocus onClick={() => initializeStep()}>
+              <Button
+                autoFocus
+                type="button"
+                onClick={event => {
+                  event.preventDefault();
+                  initializeStep();
+                }}
+              >
                 Start Again
               </Button>
             </>
