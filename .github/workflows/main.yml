@@ -4,7 +4,6 @@ on: [push]
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
@@ -13,6 +12,8 @@ jobs:
         env:
           REACT_APP_MONTH_BORN_ROLES: ${{secrets.MONTH_BORN_ROLES}}
           REACT_APP_WEBSITE_NAME: ${{secrets.WEBSITE_NAME}}
+          REACT_APP_WEBSITE_URL: ${{secrets.WEBSITE_URL}}
+          REACT_APP_WEBSITE_DESCRIPTION: ${{secrets.WEBSITE_DESCRIPTION}}
           REACT_APP_WEBSITE_FOOTER: ${{secrets.WEBSITE_FOOTER}}
         run: |
           yarn install
