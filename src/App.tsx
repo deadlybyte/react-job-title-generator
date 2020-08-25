@@ -57,7 +57,7 @@ const App = () => {
         <meta property="og:type" content="website" />
         <meta
           property="og:description"
-          content={process.env.REACT_APP_DESCRIPTION}
+          content={process.env.REACT_APP_WEBSITE_DESCRIPTION}
         />
         <meta
           property="og:image"
