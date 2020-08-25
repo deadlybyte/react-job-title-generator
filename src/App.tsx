@@ -61,7 +61,7 @@ const App = () => {
         />
         <meta
           property="og:image"
-          content={`${process.env.REACT_APP_WEBSITE_URL}/app-screenshot.jpg`}
+          content={`${process.env.REACT_APP_WEBSITE_URL}/app-screenshot.png`}
         />
         <link rel="canonical" href={process.env.REACT_APP_WEBSITE_URL} />
       </Helmet>
