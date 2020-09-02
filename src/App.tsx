@@ -44,27 +44,33 @@ const App = () => {
   }
   return (
     <>
-      <Helmet title={process.env.REACT_APP_WEBSITE_NAME}>
-        <meta
-          property="description"
-          content={process.env.REACT_APP_WEBSITE_DESCRIPTION}
-        />
-        <meta
-          property="og:title"
-          content={process.env.REACT_APP_WEBSITE_NAME}
-        />
-        <meta property="og:url" content={process.env.REACT_APP_WEBSITE_URL} />
-        <meta property="og:type" content="website" />
-        <meta
-          property="og:description"
-          content={process.env.REACT_APP_WEBSITE_DESCRIPTION}
-        />
-        <meta
-          property="og:image"
-          content={`${process.env.REACT_APP_WEBSITE_URL}/app-screenshot.png`}
-        />
-        <link rel="canonical" href={process.env.REACT_APP_WEBSITE_URL} />
-      </Helmet>
+      <Helmet
+        title={process.env.REACT_APP_WEBSITE_NAME}
+        meta={[
+          { name: 'author', content: 'Deadly Byte' },
+          {
+            name: 'description',
+            content: process.env.REACT_APP_WEBSITE_DESCRIPTION,
+          },
+          { name: 'og:title', content: process.env.REACT_APP_WEBSITE_NAME },
+          { name: 'og:url', content: process.env.REACT_APP_WEBSITE_URL },
+          { name: 'og:type', content: 'website' },
+          {
+            name: 'og:description',
+            content: process.env.REACT_APP_WEBSITE_DESCRIPTION,
+          },
+          {
+            name: 'og:image',
+            content: `${process.env.REACT_APP_WEBSITE_URL}/app-screenshot.png`,
+          },
+        ]}
+        link={[
+          {
+            rel: 'canonical',
+            href: process.env.REACT_APP_WEBSITE_URL,
+          },
+        ]}
+      ></Helmet>
       <Background>
         <Header>
           {currentStep === Steps.Welcome && (
